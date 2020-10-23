@@ -1,28 +1,28 @@
 //
 //
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
-int main()
-{
-    int t, n;
-    int a[n];
-    cin >> t;
+int main() {
+    int n;
+    vector<int> arr;
 
-    while (t--)
-    {
-        cin >> n;
-        for (int i = 0; i < n; i++)
-        {
-            cin >> a[i];
-        }
-        sort(a, a + n);
-        for (int i = 0; i < n; i++)
-        {
-            cout << a[i] << " ";
-        }
-        cout << endl;
+    cin >> n;
+    for(int i=0; i<n; i++) {
+        int input;
+        cin >> input;
+        arr.push_back(input);
     }
 
-    return 0;
+    sort(arr.begin(), arr.end());
+    
+    int max = arr[n-1];
+    int min = arr[0];
+
+    cout << max << " " << min << endl;
+
+    
+    
+
+
 }
